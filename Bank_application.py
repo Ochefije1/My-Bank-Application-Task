@@ -115,9 +115,6 @@ if __name__ == '__main__':
             email = input('Enter your email: ')
             password = input('Enter your password: ')
             account = bank.login(email, password)
-            print(account, "account")
-            import pdb
-            pdb.set_trace()
             if account:
                 recipient_email = input('Enter the recipient email: ')
                 recipient = bank.login(recipient_email, '')
